@@ -1,0 +1,28 @@
+.NewProduct {
+  background-color: var(--c2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  input {
+    text-align: center;
+  }
+  input,
+  textarea {
+    border-radius: 5px;
+    padding: 0 5px;
+  }
+  .submit-btn {
+    background-color: green;
+    color: white;
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      background-color: lightgreen;
+      color: green;
+    }
+  }
+}

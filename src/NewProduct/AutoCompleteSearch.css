@@ -1,0 +1,103 @@
+.AutoCompleteSearch {
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  position: relative;
+}
+
+/* the Input part:👇 */
+.AutoCompleteSearch .Input {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.AutoCompleteSearch .Input input {
+  width: 100%;
+  margin: 5px 10px;
+  text-align: center;
+  border: none;
+  outline: dashed;
+  background-color: inherit;
+  border-radius: 10px;
+}
+
+.AutoCompleteSearch .Input .remove {
+  background-image: url("./icons/close.svg");
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.AutoCompleteSearch .selected-item {
+  /* width: fit-content; */
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+  border-radius: 15px;
+  margin: 2px;
+}
+.AutoCompleteSearch .selected-item span {
+  width: max-content;
+}
+/* the Input part: 👆*/
+/*  */
+/*  */
+/*  */
+
+/* @media screen and (min-width: 750px) {
+  .AutoCompleteSearch {
+    max-width: 25%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .AutoCompleteSearch {
+    max-width: 30%;
+  }
+} */
+/* @media screen and (min-width: 600px) {
+  .AutoCompleteSearch {
+    width: 30%;
+  }
+} */
+
+/* the Suggestions part:👇 */
+.AutoCompleteSearch .Suggestions {
+  width: calc(100% - 45px);
+  max-width: 250px;
+  background-color: lightgoldenrodyellow;
+  margin: 5px auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.AutoCompleteSearch .Suggestions .suggestion-element {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: cadetblue;
+  color: white;
+}
+
+.AutoCompleteSearch .suggestion-element:focus {
+  background-color: grey;
+}
+.AutoCompleteSearch .suggestion-element:hover {
+  /* display: block; */
+  background-color: grey;
+}
+
+/* the Suggestions part: 👆*/

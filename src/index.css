@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Vazirmatn-Regular"; /*Can be any text*/
+  src: local("Vazirmatn-Regular"),
+    url("./fonts/Vazirmatn-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Vazirmatn-Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

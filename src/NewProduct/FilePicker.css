@@ -1,0 +1,44 @@
+.FilePicker {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3/4;
+  background-color: beige;
+  border-radius: 5px;
+}
+.FilePicker input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  /* I see you are wondering why width and height are set to 0.1px instead of just 0px. Setting the property values to zero ends up throwing the element out of tab party in some browsers. And position: absolute guarantees the element does not interfere with the sibling elements. */
+}
+
+.FilePicker label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: black;
+}
+
+.FilePicker input:focus + label,
+.FilePicker label:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+.FilePicker label .icon {
+  width: 50%;
+  aspect-ratio: 1;
+  background-image: url("./icons/add.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: dashed 2px;
+}
+.FilePicker label:hover > .icon {
+  background-color: blue;
+}

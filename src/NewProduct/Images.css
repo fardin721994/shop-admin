@@ -1,0 +1,32 @@
+.Images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.Images .image {
+  position: relative;
+}
+.Images .image img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3/4;
+}
+.Images .image .remove {
+  background-image: url("./icons/close.svg");
+  width: 25px;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: coral;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Images .image .remove:hover {
+  background-color: red;
+}
